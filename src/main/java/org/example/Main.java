@@ -3,15 +3,31 @@ package org.example;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static <git> void main(String[] args) {
+        String name = "Kirill";
+        int age = 18;
+        float weight = 65.3F;
+        System.out.println("Name: " + name + ", Age: "+ age + ", Weight" + weight);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+       int a = 1;
+       int b = 2;
+
+        System.out.println("Before swaping : a = " + a + " b = "+b);
+        a = a^b^(b = a);
+        System.out.println("After swaping : a = " + a + " b = " +b);
+
+        int y = 5;
+        int z = 3;
+
+        System.out.println("Before swaping : y = " + y + " z = "+z);
+        y = y^z^(z = y);
+        System.out.println("After swaping : y = " + y + " z = " +z);
+
+
+
+
+
+
+
     }
 }
